@@ -1,10 +1,9 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import { useDispatch } from "react-redux";
 import {Link,useNavigate  } from "react-router-dom";
 import { userRegister } from "../services/actions/authAction";
 
 const Registration = () => {
- 
   const dispatch=useDispatch()
   const navigate =useNavigate()
   const [data,setData]=useState({
@@ -24,6 +23,15 @@ const Registration = () => {
       navigate('/')
       
     }
+    
+  useEffect(() => {
+   
+    let isValid = localStorage.getItem("loggedData");
+    if (isValid) {
+      navigate("/");
+    }
+     // eslint-disable-next-line
+  }, []);
   
   return (
     <>

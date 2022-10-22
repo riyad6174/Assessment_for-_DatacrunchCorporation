@@ -58,7 +58,7 @@ const HomePage = () => {
           <p className="text-2xl flex items-center justify-center ">Welcome</p>
           <p className="text-sm ">Your Latitude is : {location.latitude}</p>
           <p className="text-sm">your Longitude is : {location.longitude}</p>
-          <p className="text-sm">Is Logged in: {isLoggedIn}</p>
+
         </div>
       </div>
       <div className="container  mt-10 grid lg:grid-cols-4 md:grid-cols-3 gap-4 mb-4">

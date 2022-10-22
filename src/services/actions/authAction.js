@@ -1,7 +1,7 @@
 
 export const initialState={
     isLoggedIn:false,
-    users:[{username:"riyad",password:"12345"}]
+    users:[{username:"admin",password:"test12345"}]
 }
 
 export const userLogin=()=>{
